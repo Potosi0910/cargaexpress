@@ -1,0 +1,54 @@
+<div class="container-fluid">
+    <h2 class="titulo">Contabilidad</h2>
+
+    <br><br>
+
+    <h3 class="subtitulo">Nuevo Registro</h3>
+
+    <br><br>
+
+    <div class="contenedor-fila">
+      <div class="contenedor-columna">
+        <label class="label-input" for="idCliente">ID Cliente:</label>
+        <input type="text" id="idCliente">
+      </div>
+
+      <div class="contenedor-columna">
+        <label class="label-input" for="valorFacturado">Valor Facturado:</label>
+        <input type="text" id="valorFacturado">
+      </div>
+    </div>
+
+    <br><br>
+
+    <div class="contenedor-fila">
+      <div class="contenedor-columna seleccion-metodo-pago">
+        <label for="metodoPago">Método de Pago:</label>
+        <select id="metodoPago" class="form-control boton-lista">
+          <option value="efectivo">Efectivo</option>
+          <option value="cheque">Cheque</option>
+          <option value="consignacion">Consignación Bancaria</option>
+          <option value="transferencia">Transferencia</option>
+        </select>
+      </div>
+
+      <div class="contenedor-columna">
+        <label class="label-input" for="fechaPago">Fecha de Pago:</label>
+        <input type="date" id="fechaPago">
+      </div>
+    </div>
+
+    <br>
+
+    <label class="label-input" for="archivo">Cargar Archivo:</label>
+    <input type="file" id="archivo">
+
+    <button class="btn btn-primary boton-cargar-archivo">Cargar Archivo</button>
+
+    <br><br>
+
+    <button class="btn btn-primary boton-registrar">Registrar</button>
+
+    <br><br>
+
+  </div>

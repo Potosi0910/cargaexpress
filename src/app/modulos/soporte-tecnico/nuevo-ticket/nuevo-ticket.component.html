@@ -1,0 +1,51 @@
+<div class="container-fluid">
+  <h2 class="titulo">Bandeja de Entrada - Soporte Técnico</h2>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Fecha de Solicitud</th>
+        <th>Número de Ticket</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- prueba arrastrar dato de base de datos -->
+      <tr>
+        <td>2024-01-30</td>
+        <td>#0000001prueba</td>
+        <td>
+          <button class="btn btn-primary" onclick="verMensaje('Mensaje de prueba')">Ver Mensaje</button>
+          <button class="btn btn-primary" onclick="responder()">Responder</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<script>
+  function verMensaje(mensaje) {
+    alert(mensaje);
+  }
+
+  function responder() {
+
+    swal({
+      title: "Responder",
+      text: "Escribe tu respuesta:",
+      content: "input",
+      button: {
+        text: "Responder",
+        className: "btn btn-primary",
+      },
+    }).then((response) => {
+      if (response) {
+        // codigo servidor
+        alert("Respuesta enviada correctamente");
+      }
+    });
+  }
+</script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>

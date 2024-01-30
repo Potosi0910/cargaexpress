@@ -1,0 +1,80 @@
+<div class="container-fluid">
+    <h2 class="titulo">Permisos rol de Cargaexpress</h2>
+
+    <form>
+      <div class="form-row">
+        <div class="col-md-6 form-group">
+          <label for="idUsuario">ID de Usuario:</label>
+          <input type="text" class="form-control" id="idUsuario">
+        </div>
+      </div>
+      <div class="col-md-6 form-group">
+        <button type="button" class="btn btn-primary" onclick="buscarUsuario()">Buscar</button>
+      </div>
+      <div class="form-group">
+        <label>Módulos permitidos:</label>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="soporteTecnico">
+          <label class="form-check-label" for="soporteTecnico">Soporte Técnico</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="recursosHumanos">
+          <label class="form-check-label" for="recursosHumanos">Recursos Humanos</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="contabilidad">
+          <label class="form-check-label" for="contabilidad">Contabilidad</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="usuarios">
+          <label class="form-check-label" for="usuarios">Usuarios</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="clientes">
+          <label class="form-check-label" for="clientes">Clientes</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="productos">
+          <label class="form-check-label" for="productos">Productos</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="envios">
+          <label class="form-check-label" for="envios">Envíos</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="observacion">Observación:</label>
+        <textarea class="form-control" id="observacion" rows="3"></textarea>
+      </div>
+
+      <button type="button" class="btn btn-primary" onclick="guardarPermisos()">Guardar</button>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    function buscarUsuario() {
+      //buscar en el servidor
+    }
+
+    function guardarPermisos() {
+      // código de guardar 
+
+      swal({
+        title: "Guardado Exitosamente",
+        text: "Los permisos se guardaron correctamente.",
+        icon: "success",
+        button: {
+          text: "Aceptar",
+          className: "btn btn-primary",
+        },
+      });
+    }
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>

@@ -1,101 +1,185 @@
-<nav>
-    <div class="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary">
-        <div class="offcanvas-md offcanvas-end bg-body-tertiary" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="sidebarMenuLabel">Company name</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#">
-                  <svg class="bi"><use xlink:href="#house-fill"/></svg>
-                  Dashboard
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="#">
-                  <svg class="bi"><use xlink:href="#file-earmark"/></svg>
-                  Orders
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="#">
-                  <svg class="bi"><use xlink:href="#cart"/></svg>
-                  Products
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="#">
-                  <svg class="bi"><use xlink:href="#people"/></svg>
-                  Customers
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="#">
-                  <svg class="bi"><use xlink:href="#graph-up"/></svg>
-                  Reports
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="#">
-                  <svg class="bi"><use xlink:href="#puzzle"/></svg>
-                  Integrations
-                </a>
-              </li>
-            </ul>
-  
-            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
-              <span>Saved reports</span>
-              <a class="link-secondary" href="#" aria-label="Add a new report">
-                <svg class="bi"><use xlink:href="#plus-circle"/></svg>
-              </a>
-            </h6>
-            <ul class="nav flex-column mb-auto">
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="#">
-                  <svg class="bi"><use xlink:href="#file-earmark-text"/></svg>
-                  Current month
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="#">
-                  <svg class="bi"><use xlink:href="#file-earmark-text"/></svg>
-                  Last quarter
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="#">
-                  <svg class="bi"><use xlink:href="#file-earmark-text"/></svg>
-                  Social engagement
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="#">
-                  <svg class="bi"><use xlink:href="#file-earmark-text"/></svg>
-                  Year-end sale
-                </a>
-              </li>
-            </ul>
-  
-            <hr class="my-3">
-  
-            <ul class="nav flex-column mb-auto">
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="#">
-                  <svg class="bi"><use xlink:href="#gear-wide-connected"/></svg>
-                  Settings
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="#">
-                  <svg class="bi"><use xlink:href="#door-closed"/></svg>
-                  Sign out
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
 
+<nav>
+  <div class="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary">
+    <div class="offcanvas-md offcanvas-end bg-body-tertiary" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="sidebarMenuLabel">CARGAEXPRESS</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
+
+        <!-- ENVIOS con Collapse -->
+        <ul class="nav flex-column menuprincipal">
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center gap-2" data-bs-toggle="collapse" href="#enviosCollapse" role="button" aria-expanded="false" aria-controls="enviosCollapse">
+              <svg class="bi"><use xlink:href="#file-earmark-text"/></svg>
+              ENVIOS
+            </a>
+            <div class="collapse" id="enviosCollapse">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    NUEVO ENVIO
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    RASTREO
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- PRODUCTOS con Collapse -->
+          <li class="nav-item menuprincipal">
+            <a class="nav-link d-flex align-items-center gap-2" data-bs-toggle="collapse" href="#productosCollapse" role="button" aria-expanded="false" aria-controls="productosCollapse">
+              <svg class="bi"><use xlink:href="#file-earmark-text"/></svg>
+              PRODUCTOS
+            </a>
+            <div class="collapse" id="productosCollapse">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    CONSULTAR
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    NUEVO INGRESO
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- CLIENTES con Collapse -->
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center gap-2" data-bs-toggle="collapse" href="#clientesCollapse" role="button" aria-expanded="false" aria-controls="clientesCollapse">
+              <svg class="bi"><use xlink:href="#file-earmark-text"/></svg>
+              CLIENTES
+            </a>
+            <div class="collapse" id="clientesCollapse">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    BUSQUEDA
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    NUEVO INGRESO
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    ACTUALIZAR DATOS 
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <br>
+          <h6> ADMINISTRACION</h6>
+      
+          
+          
+          <!-- CONTABILIDAD con Collapse -->
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center gap-2" data-bs-toggle="collapse" href="#contabilidadCollapse" role="button" aria-expanded="false" aria-controls="contabilidadCollapse">
+              <svg class="bi"><use xlink:href="#file-earmark-text"/></svg>
+              CONTABILIDAD
+            </a>
+            <div class="collapse" id="contabilidadCollapse">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/contabilidad/soporte">
+                    INGRESAR SOPORTE FACTURA
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/contabilidad/reporte">
+                    REPORTE DE CONTABILIDAD
+                  </a>
+                </li>
+              </ul>
+            </div>
+            
+
+          <!-- RECURSOS HUMANOS con Collapse -->
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center gap-2" data-bs-toggle="collapse" href="#recursosHumanosCollapse" role="button" aria-expanded="false" aria-controls="recursosHumanosCollapse">
+              <svg class="bi"><use xlink:href="#file-earmark-text"/></svg>
+              RECURSOS HUMANOS
+            </a>
+            <div class="collapse" id="recursosHumanosCollapse">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/rrhh/bandeja-rrhh">
+                    INGRESO A NOMINA
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/rrhh/ingreso">
+                    LIQUIDACION NOMINA
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/rrhh/liquidacion">
+                    REGISTRO TALENTO HUMANO
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- USUARIO con Collapse -->
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center gap-2" routerLink="usuarios">
+              <svg class="bi"><use xlink:href="#door-closed"/></svg>
+              USUARIO
+            </a>
+          </li>
+
+          <!-- SOPORTE TÉCNICO con Collapse -->
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center gap-2" data-bs-toggle="collapse" href="#soporteTecnicoCollapse" role="button" aria-expanded="false" aria-controls="soporteTecnicoCollapse">
+              <svg class="bi"><use xlink:href="#file-earmark-text"/></svg>
+              SOPORTE TÉCNICO
+            </a>
+            <div class="collapse" id="soporteTecnicoCollapse">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/soporte-tecnico/bandeja">
+                    NUEVO TICKET
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/soporte-tecnico/nuevo-ticket">
+                    BANDEJA DE TICKET
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/soporte-tecnico/permisos-sistema">
+                    PERMISOS DEL SISTEMA
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <ul class="nav flex-column mb-auto menuprincipal">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2" routerLink="/cerrar-sesion">
+              <svg class="bi"> <!-- Agrega aquí el código SVG si es necesario --> </svg>
+              CERRAR SESIÓN
+              </a>
+            </li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </div>
 </nav>
+

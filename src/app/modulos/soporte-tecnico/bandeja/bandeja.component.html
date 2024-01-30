@@ -1,0 +1,37 @@
+<div class="container-fluid">
+  <h2 class="titulo">Nuevo Requerimiento de Soporte Técnico</h2>
+
+  <form onsubmit="enviarRequerimiento(event)">
+    <div class="form-group">
+      <label for="observaciones">Observaciones:</label>
+      <textarea class="form-control" id="observaciones" rows="5" maxlength="500"></textarea>
+      <small id="observacionesHelp" class="form-text text-muted">Máximo 500 palabras.</small>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Enviar Requerimiento</button>
+  </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  function enviarRequerimiento(event) {
+    event.preventDefault();
+    // Muestra la ventana emergente con un botón "Aceptar"
+    swal({
+      title: "Requerimiento Enviado",
+      text: "# ticket: 0000001prueba",
+      icon: "success",
+      button: {
+        text: "Aceptar",
+        className: "btn btn-primary"
+      },
+    });
+    // Puedes agregar aquí el código para enviar el requerimiento al servidor
+  }
+</script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>

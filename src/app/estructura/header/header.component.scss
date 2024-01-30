@@ -1,0 +1,20 @@
+/* Estilos anteriores... */
+
+.header-component {
+  background-color: #508DCE !important;
+  color: #ffffff;
+}
+
+.header-component .navbar-brand {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px !important;
+}
+
+/*tamaño de imagen header*/
+
+.logo_header {
+  max-width: 5%; /* Ajusta el tamaño máximo de la imagen al ancho del contenedor */
+  max-height: 5%; /* Ajusta el tamaño máximo de la imagen a la altura del contenedor */
+  margin-right: 100%;
+}
+

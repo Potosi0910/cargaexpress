@@ -1,0 +1,55 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container-fluid {
+  background-color: white;
+  border: 1px solid #508dce;
+  padding: 20px;
+  margin-right: 200px;
+}
+
+.titulo {
+  text-align: center;
+  font-weight: bold;
+}
+
+.subtitulo {
+  margin-top: 10px;
+}
+
+.boton-lista {
+  background-color: #508dce;
+  color: white;
+  border: 1px solid #508dce;
+  margin: 0px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+.boton-buscar {
+  background-color: #508dce;
+  color: white;
+  border: 1px solid #508dce;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+
+
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.tabla th, .tabla td {
+  border: 1px solid #508dce;
+  padding: 8px;
+  text-align: left;
+}

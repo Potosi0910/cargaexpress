@@ -1,0 +1,64 @@
+body {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .container-fluid {
+    background-color: white;
+    border: 1px solid #508dce;
+    padding: 10px;
+    margin: 10px;
+    margin-right: 280px;
+    
+  }
+  
+  .titulo {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .boton-lista {
+    background-color: #508dce;
+    color: white;
+    border: 1px solid #508dce;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .seleccion-sede {
+    margin-bottom: 10px;
+  }
+  
+  .label-input {
+    margin-top: 10px;
+  }
+  
+  .contenedor-fila {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .tabla-contabilidad {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .tabla-contabilidad th,
+  .tabla-contabilidad td {
+    border: 1px solid #508dce;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .tabla-contabilidad th {
+    background-color: #508dce;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .tabla-contabilidad tr:hover {
+    background-color: #f5f5f5;
+  }
+  
