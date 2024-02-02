@@ -1,20 +1,26 @@
-/* Estilos anteriores... */
+
 
 .header-component {
-  background-color: #508DCE !important;
+  background-color: #508cde !important;
   color: #ffffff;
 }
 
-.header-component .navbar-brand {
-  font-family: "Montserrat", sans-serif;
+.header-component .navbar {
+  font-family: Montserrat, sans-serif;
   font-size: 30px !important;
 }
 
-/*tamaño de imagen header*/
 
-.logo_header {
-  max-width: 5%; /* Ajusta el tamaño máximo de la imagen al ancho del contenedor */
-  max-height: 5%; /* Ajusta el tamaño máximo de la imagen a la altura del contenedor */
-  margin-right: 100%;
+.usuario{
+
+font-size: 20px;
+margin-right: 50px;
 }
 
+
+
+.titulo {
+margin-left: 40px;
+text-align: left;
+
+}

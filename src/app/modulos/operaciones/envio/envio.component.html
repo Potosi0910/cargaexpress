@@ -1,0 +1,50 @@
+
+    <div class="container-fluid">
+        <h2>Búsqueda de Envíos</h2>
+
+        <div class="row mb-3">
+            <div class=" h6 col-md-4">
+                <label for="opcionesBusqueda">Selecciona una opción:</label>
+                <select id="opcionesBusqueda" class=" h6  border form-select">
+                    <option value="idCliente">ID Cliente</option>
+                    <option value="identificacion">Identificación</option>
+                    <option value="guia">Guía</option>
+                </select>
+            </div>
+            <div class=" col-md-4">
+                <label for="numeroBusqueda">Ingrese el número:</label>
+                <input type="text" class="  border h6 form-control" id="numeroBusqueda">
+            </div>
+            <div class="col-md-4">
+                <button class="  h6 buscar btn btn-primary">Buscar</button>
+            </div>
+        </div>
+
+        <h3>Resultados de Búsqueda</h3>
+        
+        <table class=" border table">
+            <thead>
+                <tr>
+                    <th>ID Guía</th>
+                    <th>Fecha de Envío</th>
+                    <th>Estado</th>
+                    <th>Tipo de Mercancía</th>
+                    <th>Conductor Asignado</th>
+                    <th>Ubicacion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí puedes agregar filas con los resultados de la búsqueda -->
+                <tr>
+                    <td>12345</td>
+                    <td>2024-02-01</td>
+                    <td>En tránsito</td>
+                    <td>Mercancía Regular</td>
+                    <td>Juan Pérez</td>
+                    <td>bodega norte</td>
+                </tr>
+                <!-- Agrega más filas según sea necesario -->
+            </tbody>
+        </table>
+    </div>
+

@@ -1,0 +1,89 @@
+<div class="container-fluid">
+    <h2>Búsqueda de Envíos</h2>
+
+    <div class="row mb-3">
+        <div class=" h6 col-md-4">
+            <label for="opcionesBusqueda">Selecciona una opción:</label>
+            <select id="opcionesBusqueda" class=" h6 form-select">
+                <option value="idCliente">ID Cliente</option>
+                <option value="identificacion">Identificación</option>
+                <option value="guia">Guía</option>
+            </select>
+        </div>
+        <div class=" col-md-4">
+            <label for="numeroBusqueda">Ingrese el número:</label>
+            <input type="text" class=" h6 form-control" id="numeroBusqueda">
+        </div>
+        <div class="col-md-4">
+            <button class="  h6 buscar btn btn-primary">Buscar</button>
+        </div>
+    </div>
+
+    <h3>Resultados de Búsqueda</h3>
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID Guía</th>
+                <th>Fecha de recepcion</th>
+                <th>Tipo de Mercancía</th>
+                <th>Peso</th>
+                <th>Ubicacion</th>
+                <th>Caracteristica</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aquí puedes agregar filas con los resultados de la búsqueda -->
+            <tr>
+                <td>12345</td>
+                <td>2024-02-01</td>
+                <td>Mercancía Regular</td>
+                <td>10 kg</td>
+                <td>bodega norte</td>
+                <td>Caja</td>
+            </tr>
+            <!-- Agrega más filas según sea necesario -->
+        </tbody>
+    </table>
+</div>
+
+    <div class="container-fluid titulo">
+        <h2>Selección de Rutas y Mercancía</h2>
+
+        <form>
+            <div class="mb-3">
+                <label for="rutaViaje" class="form-label">Selecciona una Ruta de Viaje:</label>
+                <select id="rutaViaje" class="  h6 border form-select">
+                    <option value="ruta1">Ruta 1</option>
+                    <option value="ruta2">Ruta 2</option>
+                    <option value="ruta3">Ruta 3</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="conductor" class="form-label">Selecciona un Conductor:</label>
+                <select id="conductor" class=" h6 border form-select">
+                    <option value="conductor1">Conductor 1</option>
+                    <option value="conductor2">Conductor 2</option>
+                    <option value="conductor3">Conductor 3</option>
+                </select>
+            </div>
+
+            <div class="mb-5">
+                <label for="tipoVehiculo" class="form-label">Selecciona el Tipo de Vehículo:</label>
+                <button type="submit" class="btn btn-primary">Guardar Selección</button>
+
+                <div class="percentage-container">
+                    <div class="percentage-bar">
+                        <div id="fill" class="percentage-fill"></div>
+                    </div>
+                    <input type="range" id="porcentaje" class="percentage-input" min="0" max="100" step="1">
+                    <div class="percentage-value">50%</div>
+                </div>
+                
+            </div>
+            
+            
+
+
+

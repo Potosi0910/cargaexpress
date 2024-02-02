@@ -12,6 +12,13 @@ import { BandejaComponent } from './modulos/soporte-tecnico/bandeja/bandeja.comp
 import { NuevoTicketComponent } from './modulos/soporte-tecnico/nuevo-ticket/nuevo-ticket.component';
 import { PermisosSistemaComponent } from './modulos/soporte-tecnico/permisos-sistema/permisos-sistema.component';
 import { UsuariosComponent } from './modulos/usuarios/usuarios.component';
+import { NuevoenvioComponent } from './modulos/ventas/nuevoenvio/nuevoenvio.component';
+import { NuevoclienteComponent } from './modulos/ventas/nuevocliente/nuevocliente.component';
+import { CotizacionComponent } from './modulos/ventas/cotizacion/cotizacion.component';
+import { AsignacionComponent } from './modulos/operaciones/asignacion/asignacion.component';
+import { EnvioComponent } from './modulos/operaciones/envio/envio.component';
+import { InventarioComponent } from './modulos/operaciones/inventario/inventario.component';
+
 
 const routes: Routes = [
   {
@@ -19,6 +26,7 @@ const routes: Routes = [
     children: [
       { path: 'dashboard', component: DashboardComponent },
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+
       { path: 'contabilidad/reporte', component: ReporteComponent }, 
       { path: 'contabilidad/soporte', component: SoporteComponent},
       
@@ -29,8 +37,21 @@ const routes: Routes = [
       { path: 'soporte-tecnico/bandeja', component: BandejaComponent},
       { path: 'soporte-tecnico/nuevo-ticket', component: NuevoTicketComponent},
       { path: 'soporte-tecnico/permisos-sistema', component: PermisosSistemaComponent},
+
       { path: 'usuarios', component: UsuariosComponent},
-      { path: 'cerrar-sesion', component: CerrarSesionComponent }
+
+      { path: 'cerrar-sesion', component: CerrarSesionComponent },
+      
+      { path: 'ventas/nuevoenvio', component: NuevoenvioComponent}, 
+      { path: 'ventas/nuevocliente', component: NuevoclienteComponent}, 
+      { path: 'ventas/cotizacion', component: CotizacionComponent}, 
+
+      { path: 'operaciones/asignacion', component: AsignacionComponent},
+      { path: 'operaciones/envio', component: EnvioComponent},
+      { path: 'operaciones/inventario', component: InventarioComponent}
+      
+
+
     ]
   },
   {

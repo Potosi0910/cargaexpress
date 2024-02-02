@@ -21,6 +21,12 @@ import { LiquidacionComponent } from './modulos/rrhh/liquidacion/liquidacion.com
 import { BandejaRrhhComponent } from './modulos/rrhh/bandeja-rrhh/bandeja-rrhh.component';
 import { ReporteComponent } from './modulos/contabilidad/reporte/reporte.component';
 import { SoporteComponent } from './modulos/contabilidad/soporte/soporte.component';
+import { EnvioComponent } from './modulos/operaciones/envio/envio.component';
+import { InventarioComponent } from './modulos/operaciones/inventario/inventario.component';
+import { AsignacionComponent } from './modulos/operaciones/asignacion/asignacion.component';
+import { NuevoenvioComponent } from './modulos/ventas/nuevoenvio/nuevoenvio.component';
+import { NuevoclienteComponent } from './modulos/ventas/nuevocliente/nuevocliente.component';
+import { CotizacionComponent } from './modulos/ventas/cotizacion/cotizacion.component';
 
 
 @NgModule({
@@ -41,7 +47,13 @@ import { SoporteComponent } from './modulos/contabilidad/soporte/soporte.compone
     LiquidacionComponent,
     BandejaRrhhComponent,
     ReporteComponent,
-    SoporteComponent
+    SoporteComponent,
+    EnvioComponent,
+    InventarioComponent,
+    AsignacionComponent,
+    NuevoenvioComponent,
+    NuevoclienteComponent,
+    CotizacionComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,39 @@
+<div class="container-fluid">
+    <h2 class=" titulo text-center">Gestor de Clientes</h2>
+    <form id="clienteForm">
+        <div class=" h6 form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class=" border form-control" id="nombre" placeholder="Ingrese su nombre" required>
+        </div>
+        <br>
+        <div class=" h6 form-group">
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" class=" border form-control" id="apellidos" placeholder="Ingrese sus apellidos" required>
+        </div>
+        <br>
+        <div class=" h6 form-group">
+            <label for="email">Email:</label>
+            <input type="email" class=" border form-control" id="email" placeholder="Ingrese su email" required>
+        </div>
+        <br>
+        <div class=" h6 form-row">
+            <div class="form-group col-md-6">
+                <label for="identificacion">Identificación:</label>
+                <input type="text" class=" border form-control" id="identificacion" placeholder="Ingrese su identificación" required>
+            </div>
+            <br>
+            <div class=" h6 form-group col-md-6">
+                <label for="tipoIdentificacion">Tipo de Identificación:</label>
+                <select class=" border form-control" id="tipoIdentificacion">
+                    <option value="cedula">Cédula</option>
+                    <option value="pasaporte">Tarjeta de Identidad</option>
+                    <option value="otro">Pasaporte</option>
+                    <option value="otro">Permiso Transitorio</option>
+                </select>
+            </div>
+            <br>
+        </div>
+        <button type="button" class=" border btn btn-primary" onclick="guardarCliente()">Guardar Cliente</button>
+    </form>
+    <div id="mensaje"></div>
+</div>

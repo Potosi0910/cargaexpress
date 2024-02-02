@@ -1,14 +1,14 @@
-body {
-    font-family: "Montserrat", sans-serif;
-  }
+.container-fluid {
+  background-color: white;
+  border: 1px solid #508dce;
+  padding: 10px;
+  margin: 10px;
+  margin-right: 800px;
+  margin-left: -100px;
+  font-family: Montserrat, sans-serif;
+  font-size: 25px;
+}
 
-  .container-fluid {
-    background-color: white;
-    border: 1px solid #508dce;
-    margin: 10px;
-    margin-right: 780px;
-    margin-left: -100px;
-  }
 
   .titulo {
     text-align: center;

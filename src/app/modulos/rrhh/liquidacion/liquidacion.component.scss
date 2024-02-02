@@ -1,12 +1,12 @@
-body {
-    font-family: "Montserrat", sans-serif;
-  }
-  
-  .container-fluid {
-    background-color: white;
-    border: 1px solid #508dce;
-    padding: 20px;
-    margin-top: 20px;
+.container-fluid {
+  background-color: white;
+  border: 1px solid #508dce;
+  padding: 10px;
+  margin: 10px;
+  margin-right: 30px;
+  margin-left: 0px;
+  font-family: Montserrat, sans-serif;
+  font-size: 25px;
   }
   
   .titulo {
@@ -40,4 +40,9 @@ body {
   .azul {
     background-color: #508cde !important;
     color: white !important;
+  }
+
+  .boton {
+  margin-top: 30px;
+  
   }
