@@ -8,13 +8,9 @@
       <small id="observacionesHelp" class="form-text text-muted">Máximo 500 palabras.</small>
     </div>
 
-    <button type="submit" class="btn btn-primary">Enviar Requerimiento</button>
+    <button type="submit" class="btn btn-primary boton-submit">Enviar Requerimiento</button>
   </form>
 </div>
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <script>
   function enviarRequerimiento(event) {
@@ -32,6 +28,27 @@
     // Puedes agregar aquí el código para enviar el requerimiento al servidor
   }
 </script>
+
+<style>
+  /* Estilos adicionales para hacer responsive */
+  @media (max-width: 576px) {
+    .container-fluid {
+      margin-right: 0;
+      margin-left: 0;
+      padding-right: 0;
+      padding-left: 0;
+    }
+    .titulo {
+      font-size: 24px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .boton-submit {
+      width: 100%;
+    }
+  }
+</style>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>

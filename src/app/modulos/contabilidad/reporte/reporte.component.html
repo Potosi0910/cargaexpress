@@ -1,44 +1,56 @@
 <div class="container-fluid">
-    <h2 class="titulo">Contabilidad</h2>
+  <h2 class="titulo">Contabilidad</h2>
 
-    <div class="contenedor-fila">
-      <div class="seleccion-sede">
-        <label for="sede">Seleccione Sede:</label>
-        <select id="sede" class="boton-lista">
-          <option value="principal">Principal</option>
-          <option value="norte">Sede Norte</option>
-          <option value="sur">Sede Sur</option>
-        </select>
+  <div class="row mb-3">
+      <div class="col-md-3">
+          <label for="sede">Seleccione Sede:</label>
+          <select id="sede" class="form-select boton-lista">
+              <option value="principal">Principal</option>
+              <option value="norte">Sede Norte</option>
+              <option value="sur">Sede Sur</option>
+          </select>
       </div>
 
-      <label class="label-input" for="idCliente">ID Cliente:</label>
-      <input type="text" id="idCliente">
+      <div class="col-md-3">
+          <label class="label-input" for="idCliente">ID Cliente:</label>
+          <input type="text" id="idCliente" class="form-control">
+      </div>
 
-      <label class="label-input" for="fechaInicial">Fecha Inicial Reporte:</label>
-      <input type="date" id="fechaInicial">
+      <div class="col-md-3">
+          <label class="label-input" for="fechaInicial">Fecha Inicial Reporte:</label>
+          <input type="date" id="fechaInicial" class="form-control">
+      </div>
 
-      <label class="label-input" for="fechaFinal">Fecha Final Reporte:</label>
-      <input type="date" id="fechaFinal">
-
-      <button class="boton-lista">Generar</button>
-    </div>
-
-    <table class="tabla-contabilidad">
-      <thead>
-        <tr>
-          <th>ID Servicio</th>
-          <th>Sede</th>
-          <th>Cliente</th>
-          <th>Producto Punto Salida</th>
-          <th>Destino</th>
-          <th>Fecha de Entrega</th>
-	  <th>Valor traslado</th>
-	  <th>Valor Cancelado</th>
-	  <th>Fecha de pago</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- aqui conectar con la base de datos -->
-      </tbody>
-    </table>
+      <div class="col-md-3">
+          <label class="label-input" for="fechaFinal">Fecha Final Reporte:</label>
+          <input type="date" id="fechaFinal" class="form-control">
+      </div>
   </div>
+
+  <div class="row mb-3">
+      <div class="col-md-12">
+          <button class="btn btn-primary boton-lista">Generar</button>
+      </div>
+  </div>
+
+  <div class="table-responsive">
+      <table class="table tabla-contabilidad">
+          <thead>
+              <tr>
+                  <th>ID Servicio</th>
+                  <th>Sede</th>
+                  <th>Cliente</th>
+                  <th>Producto Punto Salida</th>
+                  <th>Destino</th>
+                  <th>Fecha de Entrega</th>
+                  <th>Valor traslado</th>
+                  <th>Valor Cancelado</th>
+                  <th>Fecha de pago</th>
+              </tr>
+          </thead>
+          <tbody>
+              <!-- aquí conectar con la base de datos -->
+          </tbody>
+      </table>
+  </div>
+</div>

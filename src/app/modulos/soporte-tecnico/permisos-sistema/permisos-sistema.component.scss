@@ -30,3 +30,12 @@
   .form-check-input:focus {
     box-shadow: 0 0 0 0.2rem rgba(80, 141, 206, 0.25);
   }
+
+  @media screen and (max-width: 700px) {
+    .container-fluid { 
+        margin-right: 100px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        margin-top: 100px; /* Modificado */
+    } 
+}

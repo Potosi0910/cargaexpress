@@ -1,28 +1,28 @@
+<div class="container-fluid">
+    <h2 class="titulo">Búsqueda de Envíos</h2>
 
-    <div class="container-fluid">
-        <h2>Búsqueda de Envíos</h2>
-
-        <div class="row mb-3">
-            <div class=" h6 col-md-4">
-                <label for="opcionesBusqueda">Selecciona una opción:</label>
-                <select id="opcionesBusqueda" class=" h6  border form-select">
-                    <option value="idCliente">ID Cliente</option>
-                    <option value="identificacion">Identificación</option>
-                    <option value="guia">Guía</option>
-                </select>
-            </div>
-            <div class=" col-md-4">
-                <label for="numeroBusqueda">Ingrese el número:</label>
-                <input type="text" class="  border h6 form-control" id="numeroBusqueda">
-            </div>
-            <div class="col-md-4">
-                <button class="  h6 buscar btn btn-primary">Buscar</button>
-            </div>
+    <div class="row mb-3">
+        <div class="col-md-4">
+            <label for="opcionesBusqueda">Selecciona una opción:</label>
+            <select id="opcionesBusqueda" class="form-select">
+                <option value="idCliente">ID Cliente</option>
+                <option value="identificacion">Identificación</option>
+                <option value="guia">Guía</option>
+            </select>
         </div>
+        <div class="col-md-4">
+            <label for="numeroBusqueda">Ingrese el número:</label>
+            <input type="text" class="form-control" id="numeroBusqueda">
+        </div>
+        <div class="col-md-4">
+            <button class="buscar btn btn-primary">Buscar</button>
+        </div>
+    </div>
 
-        <h3>Resultados de Búsqueda</h3>
-        
-        <table class=" border table">
+    <h3>Resultados de Búsqueda</h3>
+    
+    <div class="table-responsive">
+        <table class="table">
             <thead>
                 <tr>
                     <th>ID Guía</th>
@@ -30,7 +30,7 @@
                     <th>Estado</th>
                     <th>Tipo de Mercancía</th>
                     <th>Conductor Asignado</th>
-                    <th>Ubicacion</th>
+                    <th>Ubicación</th>
                 </tr>
             </thead>
             <tbody>
@@ -47,4 +47,4 @@
             </tbody>
         </table>
     </div>
-
+</div>

@@ -1,13 +1,20 @@
 <header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow header-component" data-bs-theme="dark">
-  
-  <a class=" nav-link titulo navbar col-md-3 col-lg-2" routerLink="/dashboard"> CARGAEXPRESS
+  <a class="nav-link titulo navbar col-md-3 col-lg-2" routerLink="/dashboard">
+    <i class="bi bi-house mr-2"></i> 
+    CARGAEXPRESS
   </a>
-
   
-  <div class="usuario">
+
+
+  <div class="usuario d-none d-md-block"> <!-- Ocultar en dispositivos pequeños -->
     <p>Bienvenido: Andrés Felipe Parra Martínez</p>
-    
   </div>
+ <!-- Icono de menú para dispositivos pequeños -->
+ <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+
   <ul class="navbar-nav flex-row d-md-none">
     <li class="nav-item text-nowrap">
       <button class="nav-link px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSearch" aria-controls="navbarSearch" aria-expanded="false" aria-label="Toggle search">
@@ -21,9 +28,18 @@
     </li>
   </ul>
   <div id="navbarSearch" class="navbar-search w-100 collapse">
-    <input class="form-control w-100 rounded-0 border-0" type="text" placeholder="Search" aria-label="Search">
+    <div class="input-group">
+      <input class="form-control rounded-0 border-0" type="text" placeholder="Search" aria-label="Search">
+      <!-- Icono de búsqueda visible en dispositivos medianos y grandes -->
+      <div class="input-group-append d-none d-md-block">
+        <span class="input-group-text bg-transparent border-0">
+        </span>
+      </div>
+    </div>
   </div>
+  
 </header>
+
 
 
 

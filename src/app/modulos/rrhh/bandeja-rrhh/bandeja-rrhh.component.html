@@ -4,46 +4,52 @@
   <br><br>
 
   <h3 class="subtitulo">Buscar</h3>
-  <div class=" row">
-  <div class="col-lg-3">
-    <label for="tipoIdentificacion">Tipo de Identificación:</label>
-    <select id="tipoIdentificacion" class="boton-lista form-control">
-        <option value="cedula">Cédula</option>
-        <option value="registroEspecial">Registro Especial</option>
-        <option value="pasaporte">Pasaporte</option>
-        <option value="permisoTransitorio">Permiso Transitorio</option>
-    </select>
-</div>
+  <div class="row">
+    <div class="col-lg-3 mb-3">
+      <label for="tipoIdentificacion">Tipo de Identificación:</label>
+      <select id="tipoIdentificacion" class="boton-lista form-control">
+          <option value="cedula">Cédula</option>
+          <option value="registroEspecial">Registro Especial</option>
+          <option value="pasaporte">Pasaporte</option>
+          <option value="permisoTransitorio">Permiso Transitorio</option>
+      </select>
+    </div>
 
-<div class="col-lg-4">
-    <label for="numero">Número:</label>
-    <input type="text" id="numero" class="form-control">
-</div>
+    <div class="col-lg-4 mb-3">
+      <label for="numero">Número:</label>
+      <input type="text" id="numero" class="form-control">
+    </div>
 
-<div class="col-lg-4">
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" class="form-control">
-</div>
+    <div class="col-lg-4 mb-3">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" class="form-control">
+    </div>
 
-<div class="col-lg-1">
-    <button class="boton-buscar btn btn-primary">Buscar</button>
-</div>
-</div>
+    <div class="col-lg-1 mb-3">
+      <button class="boton-buscar btn btn-primary">Buscar</button>
+    </div>
+  </div>
 
   <br><br>
 
-  <table class="tabla">
-    <tr>
-      <th>Sede</th>
-      <th>Fecha de Ingreso</th>
-      <th>Cargo</th>
-      <th>Tipo de Contrato</th>
-      <th>Salario Actual</th>
-      <th>periodo a pagar</th>
-      <th>Registro de Horas Extras mensual</th>
-      <th>Salario del mes</th>
-      <th>Fecha de pago</th>
-    </tr>
-    <!-- Aquí los datos de la base -->
-  </table>
+  <div class="table-responsive">
+    <table class="tabla table">
+      <thead>
+        <tr>
+          <th>Sede</th>
+          <th>Fecha de Ingreso</th>
+          <th>Cargo</th>
+          <th>Tipo de Contrato</th>
+          <th>Salario Actual</th>
+          <th>Periodo a Pagar</th>
+          <th>Registro de Horas Extras Mensual</th>
+          <th>Salario del Mes</th>
+          <th>Fecha de Pago</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Aquí los datos de la base -->
+      </tbody>
+    </table>
+  </div>
 </div>

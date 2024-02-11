@@ -1,26 +1,28 @@
 <div class="container-fluid">
   <h2 class="titulo">Bandeja de Entrada - Soporte Técnico</h2>
 
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Fecha de Solicitud</th>
-        <th>Número de Ticket</th>
-        <th>Acciones</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- prueba arrastrar dato de base de datos -->
-      <tr>
-        <td>2024-01-30</td>
-        <td>#0000001prueba</td>
-        <td>
-          <button class="btn btn-primary" onclick="verMensaje('Mensaje de prueba')">Ver Mensaje</button>
-          <button class="btn btn-primary" onclick="responder()">Responder</button>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Fecha de Solicitud</th>
+          <th>Número de Ticket</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- prueba arrastrar dato de base de datos -->
+        <tr>
+          <td>2024-01-30</td>
+          <td>#0000001prueba</td>
+          <td>
+            <button class="btn btn-primary boton-accion" onclick="verMensaje('Mensaje de prueba')">Ver Mensaje</button>
+            <button class="btn btn-primary boton-accion" onclick="responder()">Responder</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
 
 <script>
@@ -46,6 +48,19 @@
     });
   }
 </script>
+
+<style>
+  /* Estilos adicionales para hacer responsive */
+  @media (max-width: 576px) {
+    .titulo {
+      font-size: 24px;
+    }
+    .boton-accion {
+      margin-bottom: 5px;
+      width: 100%;
+    }
+  }
+</style>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>

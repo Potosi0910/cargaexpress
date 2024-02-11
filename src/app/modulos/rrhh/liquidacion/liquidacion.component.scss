@@ -46,3 +46,12 @@
   margin-top: 30px;
   
   }
+
+  @media screen and (max-width: 700px) {
+    .container-fluid { 
+        margin-right: -500px;
+        margin-left: 0px;
+        margin-bottom: 50px;
+        margin-top: 100px; /* Modificado */
+    } 
+}

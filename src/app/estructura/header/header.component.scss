@@ -24,3 +24,49 @@ margin-left: 40px;
 text-align: left;
 
 }
+
+.bi-house {
+
+  margin-top: 0px;
+  margin-bottom: auto;
+
+}
+
+
+@media (max-width: 767px) {
+  header { 
+    position: fixed;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    background-color: #508DCE;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    line-height: 1;
+    font-size: 14px;
+    z-index: 1; 
+    height: 100px; 
+  }
+  .titulo{
+  margin-top: 20px;
+  }
+  .bi-house{
+  margin-right: 30px;
+  }
+  .titulo{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.bi-search{
+margin-top: -50px;
+margin-left: 10px;
+margin-right: 500px;
+font-size: 30px;
+}
+
+
+
+}
+
